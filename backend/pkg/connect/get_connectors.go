@@ -3,11 +3,12 @@ package connect
 import (
 	"context"
 	"fmt"
+	"net/http"
+
 	"github.com/cloudhut/common/rest"
-	con "github.com/cloudhut/connect-client"
+	con "github.com/klinux/connect-client"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
-	"net/http"
 )
 
 type ClusterConnectors struct {

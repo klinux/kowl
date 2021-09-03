@@ -9,7 +9,7 @@ import (
 
 	"go.uber.org/zap"
 
-	con "github.com/cloudhut/connect-client"
+	con "github.com:klinux/connect-client.git"
 )
 
 type Service struct {

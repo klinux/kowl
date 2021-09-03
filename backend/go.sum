@@ -260,6 +260,8 @@ github.com/kisielk/errcheck v1.1.0/go.mod h1:EZBBE59ingxPouuu3KfxchcWSUPOHkagtvW
 github.com/kisielk/gotool v1.0.0/go.mod h1:XhKaO+MFFWcvkIS/tQcRk01m1F5IRFswLeQ+oQHNcck=
 github.com/klauspost/compress v1.13.4 h1:0zhec2I8zGnjWcKyLl6i3gPqKANCCn5e9xmviEEeX6s=
 github.com/klauspost/compress v1.13.4/go.mod h1:8dP1Hq4DHOhN9w426knH3Rhby4rFm6D8eO+e+Dq5Gzg=
+github.com/klinux/connect-client v0.0.0-20210903023934-da6ca99b28db h1:uTlR8LsGnWT/u108/f1ZmpNQZHYbCAviOnX+8QJ+A6s=
+github.com/klinux/connect-client v0.0.0-20210903023934-da6ca99b28db/go.mod h1:89YhTsJ8QGQhwD3LP0BVTvF56GzT7nolP59pkqGgxPg=
 github.com/knadh/koanf v0.16.0 h1:qQqGvE8hs/y5pZTG5kT354vqUqsDKQcXX8IOq2Rg11Y=
 github.com/knadh/koanf v0.16.0/go.mod h1:DMZ6jQlhA3PqxnKR63luVaBtDemi/m8v/FpXI7B5Ez8=
 github.com/konsorten/go-windows-terminal-sequences v1.0.1/go.mod h1:T0+1ngSBFLxvqU3pZ+m/2kptfBszLMUkC4ZK/EgS/cQ=

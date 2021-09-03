@@ -22,10 +22,10 @@ jobs:
         run: echo "::set-output name=time::$(date +%s)"
         id: set_timestamp
 
-      - name: Login to Quay
+      - name: Login to Docker
         env:
-          QUAY_ENCRYPTED_PASS: ${{ secrets.QUAY_ENCRYPTED_PASS }}
-        run: docker login quay.io -u=cloudhut+github_push -p=${QUAY_ENCRYPTED_PASS}
+          DOCKER_PASSWORKD: ${{ secrets.DOCKER_PASSWORKD }}
+        run: docker login -u=${DOCKER_LOGIN} -p=${DOCKER_PASSWORKD}
 
       - name: Build Docker Image
         run:

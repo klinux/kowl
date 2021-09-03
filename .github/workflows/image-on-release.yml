@@ -38,4 +38,4 @@ jobs:
 
       - name: Push Image
         run: |
-          docker push quay.io/cloudhut/kowl:${{ steps.extract_ref.outputs.ref }}
+          docker push klinux/kowl:${{ steps.extract_ref.outputs.ref }}

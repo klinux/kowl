@@ -47,7 +47,6 @@ func NewService(cfg Config, logger *zap.Logger) (*Service, error) {
 
 		// Basic Auth
 		logger.Info("username used to this connect server", zap.String("username", clusterCfg.Username))
-
 		if clusterCfg.Username != "" {
 			opts = append(opts, con.WithBasicAuth(clusterCfg.Username, clusterCfg.Password))
 		}

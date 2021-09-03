@@ -25,6 +25,7 @@ jobs:
 
       - name: Login to Docker
         env:
+          DOCKER_LOGIN: ${{ secrets.DOCKER_LOGIN }}
           DOCKER_PASSWORKD: ${{ secrets.DOCKER_PASSWORKD }}
         run: docker login -u=${DOCKER_LOGIN} -p=${DOCKER_PASSWORKD}
 

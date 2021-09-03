@@ -3,10 +3,11 @@ package connect
 import (
 	"context"
 	"crypto/tls"
-	"go.uber.org/zap"
 	"sync"
 	"sync/atomic"
 	"time"
+
+	"go.uber.org/zap"
 
 	con "github.com/cloudhut/connect-client"
 )
@@ -45,6 +46,8 @@ func NewService(cfg Config, logger *zap.Logger) (*Service, error) {
 		opts = append(opts, con.WithTLSConfig(tlsCfg))
 
 		// Basic Auth
+		logger.Info("username used to this connect server", zap.String("username", clusterCfg.Username))
+
 		if clusterCfg.Username != "" {
 			opts = append(opts, con.WithBasicAuth(clusterCfg.Username, clusterCfg.Password))
 		}

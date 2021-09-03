@@ -46,7 +46,7 @@ func NewService(cfg Config, logger *zap.Logger) (*Service, error) {
 		opts = append(opts, con.WithTLSConfig(tlsCfg))
 
 		// Basic Auth
-		logger.Info("username used to this connect server", zap.String("username", clusterCfg.Username))
+		logger.Info("username used to this connect server", zap.String("username", clusterCfg.Username), zap.String("password", clusterCfg.Password))
 		if clusterCfg.Username != "" {
 			opts = append(opts, con.WithBasicAuth(clusterCfg.Username, clusterCfg.Password))
 		}

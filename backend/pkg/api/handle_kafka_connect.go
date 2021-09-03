@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"time"
 
-	con "github.com/cloudhut/connect-client"
 	"github.com/cloudhut/kowl/backend/pkg/connect"
 	"github.com/go-chi/chi"
+	con "github.com/klinux/connect-client"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 

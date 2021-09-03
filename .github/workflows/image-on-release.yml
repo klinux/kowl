@@ -33,7 +33,7 @@ jobs:
           --build-arg "KOWL_GIT_SHA=${GITHUB_SHA}"
           --build-arg "KOWL_GIT_REF=${{ steps.extract_ref.outputs.ref }}"
           --build-arg "KOWL_TIMESTAMP=${{ steps.set_timestamp.outputs.time }}"
-          -t quay.io/cloudhut/kowl:${{ steps.extract_ref.outputs.ref }}
+          -t klinux/kowl:${{ steps.extract_ref.outputs.ref }}
           .
 
       - name: Push Image
